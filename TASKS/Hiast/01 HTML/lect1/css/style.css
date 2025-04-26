@@ -1,0 +1,22 @@
+h1{
+	
+	color:white;
+}
+#abc{
+	color:red;
+	
+}
+body{
+	
+	background:radial-gradient(red,orange,pink,brown);
+	
+}
+#para2{
+	
+	line-height:3;
+	word-spacing:10;
+}
+#para1{
+	letter-spacing:20;
+	
+}

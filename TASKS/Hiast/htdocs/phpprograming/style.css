@@ -1,0 +1,41 @@
+/* *{
+    margin: 0px auto;
+    padding: 0px auto;
+} */
+.heading{
+    text-align: center;
+}
+.center{
+	text-align:center;
+}
+.mc{
+	float: left;
+	padding-left:250px;
+	
+}
+.right{
+		/* text-align:left; */
+		padding-top:15px;
+		/* padding-left:100px; */
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding-left: 200px;
+    
+}
+.head2{
+    text-transform: uppercase;
+    text-align: center;
+}
+.pic{
+    width: 105px;
+    height: 150px;
+    float: right;
+    padding-right: 200px;
+}
+.name{
+    padding-left: 200px;
+    text-transform: uppercase;
+}

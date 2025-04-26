@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>mypage</title>
+	</head>
+	<body>
+	
+	<script>
+		/*var table = parseInt(prompt("enter a table number"));
+		for(var i =1; i<=10; i++){
+			document.write(table+ " x "+i+" = "+table*i+"<br>");
+		}*/
+		
+		/*for(var j=1; j<=10; j++){
+			if(j%2==0){
+				document.write(j+" even <br>");
+			}
+		}*/
+		
+		/*var num =0;
+		while(num<=50){
+			
+			document.write(num+"<br>");
+		num = num+2;
+		}*/
+		
+		//var table = parseInt(prompt("enter a table number"));
+		/*var num = 1;
+		do{
+		document.write(num);
+		num++;
+		}
+		while(num<=10);
+		*/
+		var row,col,star;
+		for(row=1; row<=19;row++){
+			for(col=20; col>=row; col--){
+				document.write("&nbsp;&nbsp;");
+			}
+			for(star=1; star<=row; star++){
+				document.write("*&nbsp;&nbsp;");
+			}
+			document.write("<br>");
+		}
+		for(row=1; row<=20;row++){
+			for(col=1; col<=row; col++){
+				document.write("&nbsp;&nbsp;");
+			}
+			for(star=20; star>=row; star--){
+				document.write("*&nbsp;&nbsp;");
+			}
+			document.write("<br>");
+		}
+	</script>
+	</body>
+</html>

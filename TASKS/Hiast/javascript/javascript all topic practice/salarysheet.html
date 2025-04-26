@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Salaray sheet</title>
+</head>
+<body>
+	<center>
+	<script>
+		document.write("<h1>------Welcome to Salaray Sheet-------<h1>")
+		var name=prompt("enter Your Name: ");
+		var basic_pay=parseInt(prompt("Enter your Basic Salaray"));
+		var allow1=(basic_pay*5)/100;
+		var allow2=(basic_pay*3)/100;
+		var allow3=(basic_pay*6)/100;
+		var gross_pay=(basic_pay+allow1+allow2+allow3);
+		var income_tax=(basic_pay*2)/100;
+		var utility_tax=(basic_pay*2)/100;
+		var deduction=(income_tax+utility_tax);
+		var net_pay=(gross_pay-deduction);
+
+
+
+	document.write("Your name is : "+name+"<br>");
+	document.write("Your Basic Salaray is : "+basic_pay+"<br>");
+	document.write("Your medical allow1 is 3% : "+allow1+"<br>");
+	document.write("Your convence allow2 is 2% : "+allow2+"<br>");
+	document.write("Your House rent allow3 is 6% : "+allow3+"<br>");
+	document.write("Your gross_pay is : "+gross_pay+"<br>");
+	document.write("Your income_tax is 2% : "+income_tax+"<br>");
+	document.write("Your utility_tax is 2% : "+utility_tax+"<br>");
+	document.write("Your deduction is : "+deduction+"<br>");
+	document.write("Your net_pay is : "+net_pay+"<br>");
+	
+	</script>
+</center>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marksheet</title>
+</head>
+<body>
+	<script>
+		document.write("<h1>-----Marksheet------<h1>");
+		var Maths=parseInt(prompt("Enter Your Maths Number : "));
+		var Physics=parseInt(prompt("Enter Your Physics Number : "));
+		var Chemistry=parseInt(prompt("Enter Your Chemistry Number : "));
+		var Urdu=parseInt(prompt("Enter Your Urdu Number : "));
+		var Computer=parseInt(prompt("Enter Your Computer Number : "));
+		var Obtaind=(Maths+Physics+Chemistry+Urdu+Chemistry);
+		var Total=500;
+		var per=Obtaind/Total*100;
+
+
+		document.write("Your Maths Marks is : "+Maths+"<br>");
+		document.write("Your Physics Marks is : "+Physics+"<br>");
+		document.write("Your Chemistry Marks is : "+Chemistry+"<br>");
+		document.write("Your Urdu Marks is : "+Urdu+"<br>");
+		document.write("Your Computer Marks is : "+Computer+"<br>");
+		document.write("Your Obtaind Marks is : "+Obtaind+"<br>");
+		document.write("Your Total Marks is : "+Total+"<br>");
+		document.write("Your Percentage Marks is : "+per+"<br>");
+
+
+		if(per>=80 && per<=100){
+			document.write("Your Grade Is : A1");
+		}
+		if(per>=70 && per<=80){
+			document.write("Your Grade Is : A");
+		}
+		if(per>=60 && per<=70){
+			document.write("Your Grade Is : B");
+		}
+		if(per>=50 && per<=60){
+			document.write("Your Grade Is : C");
+		}
+		if(per>=40 && per<=50){
+			document.write("Your Grade Is : D");
+		}
+		if(per<=40){
+			document.write("Your Grade Is : Fail");
+		}
+		else{
+			document.write("Invalid Percentage");
+		}
+
+
+</script>
+
+</body>
+</html>

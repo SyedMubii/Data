@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MCQS.COM</title>
+</head>
+<body>
+	<form name="quiz" id="quiz">
+		<p>Q1: HTML stands for?</p>
+		<p><input type="radio" name="question1" value="Hyper Text Markup Language">Hyper Text Markup Language</p>
+		<p><input type="radio" name="question1" value="Hyper Text Makup Language">Hyper Text Makup Language</p>
+		<p><input type="radio" name="question1" value="Hyper Type Markup Language">Hyper Type Markup Language</p>
+		<p><input type="radio" name="question1" value="Hiper Text Markup Language">Hiper Text Markup Language</p>
+		<br><span id="ques1" style="background-color: green; color:white; text-transform:uppercase;"></span><br>
+		
+		<br><span id="wa"></span><br>
+		<button onclick="return myfun()">submit</button>
+		<br>
+		<!-- second question -->
+		<p>Q2: HTML stands for?</p>
+		<p><input type="radio" name="question2" value="a">a</p>
+		<p><input type="radio" name="question2" value="ab">ab</p>
+		<p><input type="radio" name="question2" value="ac">ac</p>
+		<p><input type="radio" name="question2" value="ad">ad</p>
+		<br><span id="ques2" style="background-color: green; color:white; text-transform:uppercase;"></span><br>
+		
+		<button onclick="return myfun1()">submit</button>
+		<br><span id="waa"></span>
+		<!-- third Question 
+		<p>Q3: HTML stands for?</p>
+		<p><input type="radio" name="question1" value="Hyper Text Markup Language">Hyper Text Markup Language</p>
+		<p><input type="radio" name="question1" value="Hyper Text Makup Language">Hyper Text Makup Language</p>
+		<p><input type="radio" name="question1" value="Hyper Type Markup Language">Hyper Type Markup Language</p>
+		<p><input type="radio" name="question1" value="Hiper Text Markup Language">Hiper Text Markup Language</p>
+		<br><span id="ques1" style="background-color: green; color:white; text-transform:uppercase;"></span><br>
+		<button onclick="return myfun()">submit</button>
+		<br><span id="wa"></span><br>
+		<br>
+		 fourth Question 
+		<p>Q4: HTML stands for?</p>
+		<p><input type="radio" name="question1" value="Hyper Text Markup Language">Hyper Text Markup Language</p>
+		<p><input type="radio" name="question1" value="Hyper Text Makup Language">Hyper Text Makup Language</p>
+		<p><input type="radio" name="question1" value="Hyper Type Markup Language">Hyper Type Markup Language</p>
+		<p><input type="radio" name="question1" value="Hiper Text Markup Language">Hiper Text Markup Language</p>
+		<br><span id="ques1" style="background-color: green; color:white; text-transform:uppercase;"></span><br>
+		<button onclick="return myfun()">submit</button>
+		<br><span id="wa"></span><br>
+		<br>
+		 fifth Question 
+		<p>Q5: HTML stands for?</p>
+		<p><input type="radio" name="question1" value="Hyper Text Markup Language">Hyper Text Markup Language</p>
+		<p><input type="radio" name="question1" value="Hyper Text Makup Language">Hyper Text Makup Language</p>
+		<p><input type="radio" name="question1" value="Hyper Type Markup Language">Hyper Type Markup Language</p>
+		<p><input type="radio" name="question1" value="Hiper Text Markup Language">Hiper Text Markup Language</p>
+		<br><span id="ques1" style="background-color: green; color:white; text-transform:uppercase;"></span><br>
+		<button onclick="return myfun()">submit</button>
+		<br><span id="wa"></span><br>-->
+
+	
+	</form>
+	<script >
+		function myfun(){
+			var correct=0,wrong=0;
+			var q1=document.quiz.question1.value;
+			if (q1=="Hyper Text Markup Language") {
+				document.getElementById("ques1").innerHTML="Corrent Answer";
+				correct++;
+				document.getElementById("wa").innerHTML="correct is :"+correct;
+				return false;
+			}
+			else{
+				document.getElementById("ques1").innerHTML="Wrong Answer";
+				wrong++;
+				document.getElementById("wa").innerHTML="Wrong is : "+wrong;
+				return false;
+			}
+		}
+		function myfun1(){
+			var correctt=0,wrongg=0;
+			var q2= document.quiz.question2.value;
+			if (q2=="a") {
+				document.getElementById("ques2").innerHTML="Corrent Answer";
+				correctt++;
+				document.getElementById("waa").innerHTML="correct is :"+correctt;
+				return false;
+			}
+			else{
+				document.getElementById("ques2").innerHTML="Wrong Answer";
+				wrongg++;
+				document.getElementById("waa").innerHTML="Wrong is : "+wrongg;
+				return false;
+			}
+		}
+		
+	</script>
+
+
+
+</body>
+</html>

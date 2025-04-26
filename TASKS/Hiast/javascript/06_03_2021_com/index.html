@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	 <div class="div1">
+	<form onsubmit="return val()">
+		<img src="login icon.jpg">
+		<h1>Registration/ Login form</h1>
+		<label>User Name : </label>
+		<br><br>
+		<input type="text" name="name" placeholder="user name" id="user">
+		<br><span id="user_name"></span><br>
+		<label>Email : </label>
+		<br><br>
+		<input type="text" name="name" placeholder="abc@gmail.com" id="email">
+		<br><span id="@email"></span><br>
+		<label>Password : </label>
+		<br><br>
+		<input type="pass" name="Password" placeholder="minimum 8 character" id="password">
+		<br><span id="pass"></span><br>
+		<label>Confirm Password : </label>
+		<br><br>
+		<input type="pass" name="Password" placeholder="minimum 8 character" id="Confirmpas">
+		<br><span id="Confirmpass"></span><br>
+		<label>Mobile Number : </label>
+		<br><br>
+		<input type="num" name="Number" placeholder="mobiel number" id="number">
+		<br><span id="num"></span><br>
+		<button>Submit</button>
+		
+
+	</form>
+	</div>
+	<script>
+		function val(){
+			var uname=document.getElementById("user").value;
+			var mail=document.getElementById("email").value;
+			var pass1=document.getElementById("password").value;
+			var pass2=document.getElementById("Confirmpas").value;
+			var mobilenum=document.getElementById("number").value;
+
+
+
+
+			if(uname==""){
+				document.getElementById("user_name").innerHTML="please fill the user_name---";
+				return false;
+			
+			}
+			if((uname.length<=2)||(uname.length>20)){
+				document.getElementById("user_name").innerHTML="please write minimum 3 letters";
+				return false;
+			}
+			if(!isNaN(uname)){
+				document.getElementById("user_name").innerHTML="please write only character";
+				return false;
+
+			}
+			if(mail==""){
+				document.getElementById("@email").innerHTML="please fill the email---";
+				return false;
+			}
+
+			if(pass1==""){
+				document.getElementById("pass").innerHTML="please fill the password---";
+				return false;
+			}
+			if((pass1.length<=2)||(pass1.length>20)){
+				document.getElementById("pass").innerHTML="please write password between 3 to 20";
+				return false;
+			}
+			if(pass2==""){
+				document.getElementById("Confirmpass").innerHTML="please fill the confirmpassword---";
+				return false;
+			}
+			if(pass1!=pass2){
+				document.getElementById("Confirmpass").innerHTML="Confirm password is not Correct";
+				return false;
+			}
+			if(mobilenum==""){
+				document.getElementById("num").innerHTML="please fill the Mobiel Number---";
+				return false;
+			}
+			if (isNaN(mobilenum)) {
+				document.getElementById("num").innerHTML="Please write ONly Numbers";
+				return false;
+			}
+			
+
+
+		}
+	</script>
+	
+
+</body>
+</html>

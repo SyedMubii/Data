@@ -1,0 +1,161 @@
+<html>
+	<head>
+		<title>Registration Form</title>
+		<style>
+			*{
+				margin:0px auto;
+				
+			}
+			.container{
+				width:50%;
+				height:150%;
+				background:linear-gradient(skyblue,purple);
+				
+				margin-top:20px;
+				border-radius:10px;
+				padding-top:20px;
+				padding-left:10px;
+				
+			}
+			label{
+				font-size:20px;
+				font-family:arial;
+				color:white;
+				margin:10px;
+				font-weight:bold;
+				
+			}
+			input[type=text]{
+				border-radius:30px;
+				border:none;
+				height:30px;
+				padding-left:20px;
+				margin-top:20px;
+				margin-bottom:20px;
+			}
+			h1{
+				text-align:center;
+				color:white;
+			}
+			button{
+				width:30%;
+				border-radius:30px;
+				height:50px;
+				border:none;
+				font-size:20px;
+				font-weight:bolder;
+			}
+			button:hover{
+				background-color:skyblue;
+				color:white;
+			}
+			span{
+				color:red;
+				font-size:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<center><img src="small.png" width="50px"/></center>
+			<h1>Login/Registration</h1>
+			
+			
+			
+			<form onsubmit="return ammara()">
+			
+			<label>User_Name</label><br>
+			<center><input type="text" size="60px" placeholder="user name" id="user"/>
+			<br><span id="username"></span>
+			</center>
+		
+			<label>Password</label><br>
+			<center><input type="text" size="60px" placeholder="password please" id="pass"/>
+				<br><span id="password"></span>
+			
+			</center>
+			<label>Conform_Password</label><br>
+			<center><input type="text" size="60px" placeholder="reenter password" id="con-pass"/>
+				<br><span id="conf"></span>
+			</center>
+			<label>Mobile_Number</label><br>
+			<center><input type="text" size="60px" placeholder="mobile number" id="mobile"/>
+				<br><span id="contact"></span>
+			</center>
+			<label>Email</label><br>
+			<center><input type="text" size="60px" placeholder="asd@gmail.com" id="email"/>
+				<br><span id="mail"></span>
+			</center>
+			
+			<center><button>Submit</button></center>
+			</form>
+		</div>
+	
+		<script>
+			function ammara(){
+				var myuser = document.getElementById('user').value;
+				var mypass = document.getElementById('pass').value;
+				var myconf = document.getElementById('con-pass').value;
+				var mobilenumber = document.getElementById('mobile').value;
+				var myemail = document.getElementById('email').value;
+				
+				
+				if(myuser==""){
+					document.getElementById('username').innerHTML = "oye fill kar is ko phely";
+					return false;
+				}
+				
+				if((myuser.length<=2)||(myuser.length>20)){
+					
+					document.getElementById('username').innerHTML = "please write the name between 3 to 20";
+					return false;
+				}
+				
+				if(!isNaN(myuser)){
+					document.getElementById('username').innerHTML = "beta character ayengy srif zyada fankari nhi kar";
+					return false;
+			
+				}
+				
+				if(mypass==""){
+					document.GetElementById('password').innerHTML = "oye fill kar is ko phely";
+					return false;
+				}
+				if((mypass.length<=2)||(mypass.length>20)){
+					
+					document.getElementById('password').innerHTML = "please write the password between 3 to 20";
+					return false;
+				}
+				if(myconf==""){
+					
+					document.getElementById('conf').innerHTML = "oye fill kar is ko phely";
+					return false;
+				}
+				if(mypass!=myconf){
+					document.getElementById('conf').innerHTML = "password or confirmed sahi se match karwa";
+					return false;	
+				}
+				
+				
+				if(mobilenumber==""){
+				
+					document.getElementById('contact').innerHTML = "oye fill kar is ko phely";
+					return false;
+				}
+				if(isNaN(mobilenumber)){
+					document.getElementById('contact').innerHTML = "beta number ayengy srif zyada fankari nhi kar";
+					return false;
+			
+				}
+				if(myemail==""){
+					document.getElementById('mail').innerHTML = "oye fill kar is ko phely";
+					return false;
+				
+				}
+				
+				
+			}
+		
+		</script>
+	</body>
+</html>

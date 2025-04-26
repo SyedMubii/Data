@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Salary Sheet</title>
+	<style>
+		body{
+			background:linear-gradient(skyblue,yellow,green);
+			height:800px;
+
+		}
+	</style>
+</head>
+<body>
+	<center><script>
+		document.write("<h1>-----Welcome to Salary Sheet------<h1>");
+		var name=prompt("Enter Your Name is : ");
+		var basic_pay=parseInt(prompt("Enter your Salary is : "));
+		var allow1=(basic_pay*5)/100;
+		var allow2=(basic_pay*3)/100;
+		var allow3=(basic_pay*6)/100;
+		var gross_pay=(basic_pay+allow1+allow2+allow3);
+		var income_tax=(basic_pay*2)/100;
+		var utility_tax=(basic_pay*3)/100;
+		var deduction = (income_tax+utility_tax);
+		var net_pay = (gross_pay-deduction);
+
+
+		document.write("your name is : "+name+"<br>");
+		document.write("your basic pay is : "+basic_pay+"<br>");
+		document.write("your medical allow1 5% is : "+allow1+"<br>");
+		document.write("your convence allow2 3% is : "+allow2+"<br>");
+		document.write("your house-rent allow3 4% is : "+allow3+"<br>");
+		document.write("your Gross_pay is : "+gross_pay+"<br>");
+		document.write("your your Income_tax 2% is : "+income_tax+"<br>");
+		document.write("your your Utility tax 2% is : "+utility_tax+"<br>");
+		document.write("your deduction is : "+deduction+"<br>");
+		document.write("your Net pay is : "+net_pay);
+	</script>
+</center>
+
+</body>
+</html>

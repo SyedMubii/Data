@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATM Machine</title>
+</head>
+<body>
+	<center><script>
+		var pin=parseInt(prompt("enter Your password"));
+		var balance=20000;
+		var amount=parseInt(prompt("enter your amount"));
+		var remain=balance-amount;
+		if(pin ==1234){
+		document.write("Your password is correct"+"<br>");
+		document.write("Available balance is :"+balance+"<br>");
+		document.write("Atm number 12345678912345"+"<br>");
+		document.write("Enter Amount is:"+amount+"<br>");
+		document.write("Remaining balance is:"+remain+"<br>");
+		
+		
+		}
+		else{
+			document.write("Invalid password"+"<br>");
+		}
+
+
+		
+	</script></center>
+
+</body>
+</html>

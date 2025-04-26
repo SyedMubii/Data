@@ -1,0 +1,191 @@
+<doctype html>
+<html>
+<head>
+<title>Student Registration Form</title>
+<link rel="stylesheet" href="style.css"/>
+		<style>
+			h2{
+				background-color:#3366ff;
+			}
+		</style>
+		
+	</head>
+		
+<body bgcolor="white">
+	
+
+<div style="margin:0 auto; border:2px solid white; background:lightgrey; width: 900px; padding:1px;">
+<h2 class="ab" style=" font-size: 10px; font-family: arial; border-color :#3366ff; color: white;">Almaguin Campground-Reservation</h2>
+
+
+<table>
+
+<tr style="height:5px;">
+<td style="width:300px;">
+<lable style="float:right; font-size:23; color:black; font-family: arial;">Accomodation </lable>
+</td>
+<td>
+&emsp;
+<select style="width: 150px; height: 25px;">
+	<option>RV</option>
+	<option>RD</option>
+</select>
+</td>
+</tr>
+
+<tr style="height:50px;">
+<td style="width:200px;">
+<lable style="float:right; font-size:23; color:black; font-family: arial;">Name </lable>
+</td>
+<td>
+	&emsp;
+<select style="width: 120px; height: 25px">
+	<option>Mr</option>
+	<option>Mrs</option>
+</select>
+<input type="name" name="name" size="17" style="height:25;" placeholder="First Name">
+<input type="name" name="name" size="17" style="height:25;" placeholder="Last Name">
+</td>
+</tr>
+
+<tr style="height:50px;">
+<td style="width:200px;">
+<lable style="float:right; font-size:23; color:black; font-family: arial;">Guests </lable>
+</td>
+<td>
+	&emsp;
+<input type="number" name="number" min="0" max="18" style="width: 120px; height:25;" placeholder="18+ years">
+<input type="number" name="number" min="0" max="18" style="width: 155px; height:25;" placeholder="2-17 years">
+<input type="number" name="number" min="0" max="18" style="width: 155px; height:25;" placeholder="<2 years">
+
+
+</td>
+</tr>
+
+<tr style="height:50px;">
+<td style="width:200px;">
+<lable style="float:right; font-size:23; color:black; font-family: arial;">Contact </lable>
+</td>
+<td>
+	&emsp;
+<input type="email" name="email" size="57" style="height:25px;" placeholder="Email">
+		
+</td>
+</tr>
+
+<tr style="height:50px;">
+<td style="width:200px;">
+<lable style="float:right; font-size:23; color:black; font-family: arial;"></lable>
+</td>
+<td>
+	&emsp;
+<input type="number" name="number" style="width:438px; height:25px;" placeholder="Phone (xxx)-xxx xxxx">
+		
+</td>
+</tr>
+
+
+<tr style="height:50px;">
+<td style="width:200px;">
+<lable style="float:right; font-size:23; color:black; font-family: arial;">Checkin </lable>
+</td>
+<td>
+	&emsp;
+<select style="height:25; color:black; font-family: arial; width: 140;">
+			<option>--select--</option>
+			<option>Hyderabad</option>
+			<option>Karachi</option>
+		</select> &emsp;&emsp;
+<label style="color:black; font-family: arial; font-size: 23;">Checkout</label>&emsp;
+<select style="height:25; color:black; font-family: arial; width: 140;">
+			<option>--select--</option>
+			<option>Hyderabad</option>
+			<option>Karachi</option>
+		</select> 
+</td>
+</tr>
+
+
+
+
+<tr style="height:70px;">
+<td style="width:220px;">
+<lable style="float:right; font-size:23; color:black; font-family: arial;">Equipment type </lable>
+</td>
+<td>
+	&emsp;
+	<select style="height:25; color:black; font-family: arial; width: 150;">
+			<option>Travel trailer</option>
+			<option>Hyderabad</option>
+			<option>Karachi</option>
+		</select>&emsp;&emsp;&emsp;&emsp;
+		<label style="color:black; font-family: arial; font-size: 23;">Slide-outs</label>&emsp;&emsp;<input type="text" name="text" size="7">
+
+
+
+</td>
+</tr>
+
+<tr style="height:70px;">
+<td style="width:220px;">
+<lable style="float:right; font-size:23; color:black; font-family: arial;">Required Service </lable>
+</td>
+<td>
+	&emsp;
+	<select style="height:25; color:black; font-family: arial; width: 150;">
+			<option>--select--</option>
+			<option>Hyderabad</option>
+			<option>Karachi</option>
+		</select>
+</td>
+</tr>
+
+
+
+
+
+<tr style="height:70px;">
+<td style="width:220px;">
+<lable style="float:right; font-size:23; color:black; font-family: arial;">Pets </lable>
+</td>
+<td>
+	&emsp;
+	<select style="height:25; color:black; font-family: arial; width: 150;">
+			<option>Travel trailer</option>
+			<option>Hyderabad</option>
+			<option>Karachi</option>
+		</select>
+</td>
+</tr>
+
+
+<tr style="height:50px;">
+<td style="width:200px;" valign="top">
+<lable style="font-size:23; float: right; color:black; font-family: arial;">Comments </lable>
+</td>
+<td>
+	&emsp;
+	<textarea rows="6" cols="70" style="color:darkred;" placeholder="Additional comments"></textarea>
+</td>
+</tr>
+
+<tr style="height:70px;">
+<td style="width:220px;">
+		
+	</td>
+	<td>&emsp;
+		<input style="width: 200px; height:40px; color: white; border-radius: 5px; border-color:#3366ff;  background-color: #3366ff;" type="button" name="button" value="Request Reservation"/>
+			<input style="width: 75px; height:40px; color: white; border-radius: 5px; float: right; border-color:darkred;background-color: darkred;  " type="submit" name="submit" value="Cancel"/>
+			
+	</td>
+</tr>
+
+</table>
+</div>
+
+
+
+	
+</body>
+
+</html>

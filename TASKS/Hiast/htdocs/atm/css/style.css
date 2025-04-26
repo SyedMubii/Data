@@ -1,0 +1,17 @@
+*{
+    margin: 0px auto;
+  //padding: 0;
+    //width: 1000px;
+}
+form{
+    /* color: white; */
+    /* width: 500px; */
+    /* height: 500px; */
+    background-color: lightgreen;
+    border: 1px solid gray;
+    width: 500px;
+}
+body{
+        
+    /* height: 500px; */
+}

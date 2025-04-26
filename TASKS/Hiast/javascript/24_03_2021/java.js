@@ -1,0 +1,14 @@
+var num1=15;
+		var num2=64;
+		var sum;
+		sum=num1+num2;
+		document.write("sum is : "+sum+"<br>");
+		var sub;
+		sub=num1-num2;
+		document.write("sub is : "+sub+"<br>");
+		var mul;
+		mul=num1*num2;
+		document.write("mul is : "+mul+"<br>");
+		var div;
+		div=num1/num2;
+		document.write("div is : "+div+"<br>");

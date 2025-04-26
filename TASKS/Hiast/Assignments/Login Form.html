@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+<style>
+	.container{
+		font-family: algerian;
+		background:linear-gradient(black,brown,black,purple,black);
+		border-radius: 80px;
+		color: white;
+		width: 600px;
+		height: 550px;
+		padding-top: 10px;
+		margin-top: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-left: 300px;
+	}
+
+	.container1
+	{
+	
+		margin:0px auto;
+		float: right;
+		margin-top: 75px;
+		width: 150px;
+		height: 190px;
+		padding:23px;
+	}
+	
+	.container2
+	{
+		margin:0 auto;
+		float: left;
+		width: 378px;
+		height: 330px;
+		padding:10px;
+	}
+
+	.container3
+	{
+		width: 610px;
+		height: 437px;
+		
+	}
+
+
+	.dc{
+		height: 20px;
+		border-radius: 20px;"
+	}
+
+	.dd{
+		width: 80px;
+		height: 30px;
+		border-radius: 20px;
+		color: white;
+		background:linear-gradient(black,brown,orange,black);
+		font-family: algerian;
+	}
+
+	span{
+		color: black;
+		font-family: bold;
+		font-size: 13px;
+		text-align: center;
+	}
+
+
+</style>
+
+</head>
+	<body style="background:linear-gradient(black,brown,orange,black);">
+	<!-- <body style=" background-image:url('pic.jpg');">
+	 --> 
+
+	<div class="container" >
+		
+		<form onsubmit="return Mubii()">
+		
+		<div class="container3">
+		<h1 style="text-align: center;">Login/Registeration Form</h1>	
+		
+		
+		<div class="container2">
+		<label>Username</label><br>
+
+	<input type="name" name="text" id="user" size="50" class="dc" placeholder="&emsp;Enter Your Name"><br>
+	
+<span id="Username"></span><br>
+
+		<label>Password</label><br>
+	
+	<input type="Password" name="Password" id="pass" size="50" class="dc" placeholder="&emsp;Enter Your Password"><br>
+
+<span id="Password"></span><br>
+
+		<label>Confirm Password</label><br>
+	
+	<input type="Password" name="Password" id="cpass" size="50" class="dc" placeholder="&emsp;Enter Your Confirm Password"><br>
+
+<span id="Confirm Password"></span><br>
+
+		<label>Email</label><br>
+	
+	<input type="Email" name="Email" id="mail" size="50" class="dc" placeholder="&emsp;abc123@gmail.com"><br>
+		
+<span id="Email"></span><br>
+
+		
+
+		<label>Phone Number</label><br>
+	<input type="text" name="text" id="phone" size="50" class="dc" placeholder="&emsp;0324-3434723">
+	<br>
+ 
+<span id="Phone Number"></span><br>
+	</div>
+
+<div class="container1">
+	<center><img src="Small.png" width="150px"></center>
+</div>
+
+</div>
+<center><button class="dd">submit</button>&emsp;&emsp;<button class="dd">Login</button></center>
+</form>
+
+
+
+
+
+<script>
+		function Mubii(){
+			var user=document.getElementById('user').value;
+			var pass=document.getElementById('pass').value;
+			var cpass=document.getElementById('cpass').value;
+			var mail=document.getElementById('mail').value;
+			var phone=document.getElementById('phone').value;
+			
+			if(user==""){
+				document.getElementById('Username').innerHTML = "***Please fill Form Correctly***";
+				return false;
+			}
+			if((user.length<=2)||(user.length>20)){
+				document.getElementById('Username').innerHTML = "***Please write the name minimum 3 Letters***";
+				return false;
+			}
+			if(!isNaN(user)){
+				document.getElementById('Username').innerHTML = "***Only Characters are Allowed***";
+				return false;
+			}
+			if(pass==""){
+				document.getElementById('Password').innerHTML = "***Please fill Form Correctly***";
+				return false;
+			}
+			if((pass.length<=2)||(pass.length>20)){
+				document.getElementById('Password').innerHTML = "***Please write Password minimum 3 Letters***";
+				return false;
+			}
+			if(cpass==""){
+				document.getElementById('Confirm Password').innerHTML = "***Please fill Form Correctly***";
+				return false;
+			}
+			if(pass!=cpass){
+				document.getElementById('Confirm Password').innerHTML = "***Password Does Not Match***";
+				return false;
+			}
+			if(mail==""){
+				document.getElementById('Email').innerHTML = "***Please fill Form Correctly***";
+				return false;
+			}
+			if(phone==""){
+				document.getElementById('Phone Number').innerHTML = "***Please fill Form Correctly***";
+				return false;
+			}
+			if(isNaN(phone)){
+				document.getElementById('Phone Number').innerHTML = "***Only Numbers are Allowed***";
+				return false;
+			}
+			if(phone.length<=11){
+				document.getElementById('Phone Number').innerHTML = "***Please write Your Number minimum 11 Letters***";
+				return false;
+			}
+			
+			
+
+
+
+
+
+
+
+		}
+
+
+
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Salary Sheet</title>
+<body>
+
+<script>
+"<h1>Salary Sheet</h1>"
+var a=parseInt(prompt("Enter S.no"));
+var b=prompt("Enter Exp name");
+var c=parseInt(prompt("Enter basic pay"));
+var d=c*0.07;
+var e=c*0.03;
+var f=c*0.045;
+var g=c+d+e+f;
+var h=c*0.035;
+var i=c*0.025;
+var j=h+i;
+var k=g-j;
+
+
+
+document.write("Serial number:&emsp;&emsp;"+a+"<br>");
+document.write("Your Expense:&emsp;&emsp;"+b+"<br>");
+document.write("Your salary:&emsp;&emsp;"+c+"<br>");
+document.write("Allownce 1:&emsp;&emsp;"+d+"<br>");
+document.write("Allownce 2:&emsp;&emsp;"+e+"<br>");
+document.write("Allownce 3:&emsp;&emsp;"+f+"<br>");
+document.write("Gross Pay:&emsp;&emsp;"+g+"<br>");
+document.write("Income Tax:&emsp;&emsp;"+h+"<br>");
+document.write("Utitlity Tax:&emsp;&emsp;"+i+"<br>");
+document.write("Deduction:&emsp;&emsp;"+j+"<br>");
+document.write("Net Pay:&emsp;&emsp;"+k+"<br>");
+	
+
+
+</script>
+
+</body>
+</head>
+
+</html>

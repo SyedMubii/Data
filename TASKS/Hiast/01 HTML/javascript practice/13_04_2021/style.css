@@ -1,0 +1,45 @@
+*{
+	margin: 0px auto;
+	padding: 0px auto;
+	//width: 900px;
+
+}
+.container{
+	border:10px solid gray;
+	width: 500px;
+	height: 620px;
+	margin-top:20px;
+	background-color:black;
+	border-radius: 30px;
+	text-align: center;
+	box-sizing: border-box;
+
+}
+input[type="text"]{
+	width: 400px;
+	height: 50px;
+	border-radius: 30px;
+	text-align: right;
+	margin-top: 10px;
+	color: orange;
+	font-size: 20px;
+
+}
+input[type="button"]{
+	width: 70px;
+	height: 70px;
+	font-size: 30px;
+	border-radius: 10px;
+	border:none;
+
+}
+input.large{
+	width: 400px;
+	height: 50px;
+}
+input[type="button"]:hover{
+background:linear-gradient(orange,yellow);
+}
+h1{
+	color: white;
+}

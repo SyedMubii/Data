@@ -1,0 +1,48 @@
+.div1{
+	border:3px solid gray;
+	width:300px;
+	font-weight: bold;
+	font-style: italic;
+	font-family:Edwardian Script ITC;
+	font-size: 26px;
+	float: left;
+	background-color: yellow;
+	box-shadow:-10px -20px 5px orange;
+		height:450px; 
+
+
+}
+.div2{
+	border:3px solid green;
+	width:300px;
+	font-weight: bold;
+	font-style: italic;
+	font-family:Edwardian Script ITC;
+	font-size: 26px;
+	float: left;
+	background-color: orange;
+	/*clear: both;*/
+	margin-left:20px;
+	box-shadow:-10px -20px 5px red;
+	overflow:auto;
+	height:450px; 
+	clear:auto;
+
+}
+.div3{
+	border:3px solid gray;
+	width:300px;
+	font-weight: bold;
+	font-style: italic;
+	font-family:Edwardian Script ITC;
+	font-size: 26px;
+	float:left;
+	background-color:#4CAF50;
+	color:#fff;
+	/*clear: both;*/
+	/*margin-top:50px;*/
+	margin-left:20px;
+	box-shadow:-10px -20px 5px orange,-20px -40px 5px red;
+	height:450px;
+
+}

@@ -1,0 +1,19 @@
+.menu {
+    /* background-color: pink; */
+}
+
+.menu ul li {
+    background-color: black;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.menu ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.active:active{
+    color: green;
+
+}
